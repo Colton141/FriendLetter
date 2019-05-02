@@ -38,5 +38,12 @@ namespace FriendLetter.Controllers
       return View(myLetterVariable);
     }
 
+    [Produces("text/html")]
+    [Route("/favorite_photos")]
+    public ActionResult FavoritePhotos()
+    {
+      return View();
+    }
+
   }
 }
